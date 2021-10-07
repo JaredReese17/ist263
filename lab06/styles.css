@@ -3,8 +3,8 @@ p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:cadetblue;
     font-size: 125%}
 
-h1 {color:darkcyan; letter-spacing: 1.5em; word-spacing: 1.5em; font-size: 2em;}
-h2 {color:darkcyan; letter-spacing: 1.5em; word-spacing: 1.5em; font-size: .5em;}
+h1 {color:darkcyan; letter-spacing: normal; word-spacing: 1.5em; font-size: 2em;}
+h2 {color:darkcyan; letter-spacing: normal; word-spacing: 1.5em; font-size: .5em;}
 p, h1, h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 p a {color:rgb(50, 194, 204)}
 
