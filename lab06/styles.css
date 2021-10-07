@@ -7,4 +7,4 @@ h1 {color:darkcyan; letter-spacing: 1.5em; word-spacing: 1.5em}
 p, h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 p a {color:rgb(50, 194, 204)}
 
-tr:nth-child(even){background-color: #A020F0}
+tbody tr:nth-child(even){background-color: #A020F0}
