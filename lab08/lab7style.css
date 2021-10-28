@@ -1,0 +1,21 @@
+body {color: #d9cab3;
+    background-color: #212121;}
+p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#d9cab3;
+    font-size: 125%}
+    .quote {float: right; margin-top: 0px;}
+    .cc {float: left;}
+
+h1 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5em; font-size: 2em;}
+h2 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5em; font-size: 1.25em;}
+p, h1, h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+p a {color:#6d9886}
+nav a:link {color:#6d9886;
+    background-color: #d9cab3;
+    padding:10px;
+    margin-bottom: 30px;}
+nav a:hover {background-color:#d9cab3;}
+a:link {color: #d9cab3}
+a:visited {color: #f6f6f6}
+a:hover{color: #1c0c5b;
+text-decoration-style: double;}
