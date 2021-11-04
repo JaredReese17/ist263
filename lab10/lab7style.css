@@ -2,12 +2,12 @@ body {color: #d9cab3;
     background-color: #212121;}
 p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#d9cab3;
-    font-size: 125%}
+    font-size: 100%}
     .quote {float: right; margin-top: 0px;}
     .cc {float: left;}
 
-h1 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5em; font-size: 2em;}
-h2 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5em; font-size: 1.25em;}
+h1 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5px; font-size: 2em;}
+h2 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5px; font-size: 1.25em;}
 p, h1, h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 p a {color:#6d9886}
 nav a:link {color:#6d9886;
@@ -19,3 +19,13 @@ a:link {color: #d9cab3}
 a:visited {color: #f6f6f6}
 a:hover{color: #1c0c5b;
 text-decoration-style: double;}
+.skillheader {text-align: center;}
+.icons {display: flex;}
+.icons img {width: 50px; height: 50px; margin-right: 20px;}
+.otherskill {padding: 20px; background-color: #18241f; border-radius: 1em;}
+.flexbox2 {display: flex;}
+.flexbox2 div {flex: 1}
+.icons {flex-basis: 75%; margin-top: 50px; margin-left: 35px;}
+.otherskill {flex-basis: 25%; margin-right: 40px;}
+.ecredit {display: flex; flex: 1;}
+.text {flex-basis: 75%}
