@@ -7,24 +7,28 @@
         <title>Skills</title>
         
         <style>
-            table, th, td {border: 1px solid black;}
-            body {color: rgb(43, 226, 125)}
-p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:cadetblue;
-    font-size: 125%}
-
-h1 {color:darkcyan; letter-spacing: normal; word-spacing: 1.5em; font-size: 2em;}
-h2 {color:darkcyan; letter-spacing: normal; word-spacing: 1.5em; font-size: .5em;}
-p, h1, h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-p a {color:rgb(50, 194, 204)}
-
-tbody tr:nth-child(even){background-color: #A020F0}
+    
+        tbody tr:nth-child(even){background-color: #A020F0}
 
         </style>
+        <link rel="stylesheet" type="text/css" href="lab7style.css">
     </head>
-
+   
     <body>
-    <table>
+        <nav>
+            <a href="skills.html">Skills</a>
+            |
+            <a href="../lab10/contact.html">Contact</a>
+            |
+            <a href="../lab10/Index.html">Home</a>
+        </nav>
+        <hr>
+        <h1 class="skillheader">Athletic Skills</h1>
+        <div class="ecredit">
+        <div class="text"><p>My career in athletics is one that has shaped a giant portion of my life. I stopped playing sports at the end of highschool, as my new journey began in college. I have compiled a record of my past potential in each of these athletic feats to remind myself of what I as previously capable of.</p> </div>
+        <div class="space"> </div>
+        </div>
+    <!--<table>
         <caption>Athletic Prowess</caption>
         <tr><th>Sport</th><th>Skill Level</th><th>Year(s) Played</th></tr>
         <tr><td>Basketball</td><td>Terrible</td><td>2</td></tr>
@@ -37,9 +41,50 @@ tbody tr:nth-child(even){background-color: #A020F0}
         <tr><td>Water Polo</td><td>Beginner</td><td>0</td></tr>
         <tr><td>Track & Field</td><td>Previous Master</td><td>11</td></tr>
         <tr><td>Rowing</td><td>Beginner</td><td>0</td></tr>
-    </table>
+    </table> We are changing this table in the lab-->
 <br>
-<form>
+
+<div class="flexbox2">
+    
+        <div class="icons">
+            <div><img src="../images/volley.png" alt="Volleyball">
+            <br>
+            Volleyball</div>
+            <br>
+            <div><img src="../images/track.png" alt="Track">
+            <br>
+            Track</div>
+            <br>
+            <div> <img src="../images/croquet.png" alt="Croquet">
+            <br>
+            Croquet</div>
+            <br>
+            <div> <img src="../images/base.png" alt="Baseball">
+            <br>
+            Baseball</div>
+            <br>
+            <div> <img src="../images/soccer.png" alt="Soccer">
+            <br>
+            Soccer</div>
+            <br>
+        </div>
+    
+        <aside>
+            <div class="otherskill">
+                <div>
+                <h2>Other Skills</h2>
+                </div>
+                <div>Football</div> 
+                <div>Swimming</div> 
+                <div>Water Polo</div>
+                <div>Rowing</div> 
+                <div>Basketball</div> 
+            </div>
+        </aside>
+    
+</div>
+
+<!--<form>
         <fieldset>
             <legend>Name</legend>
             <label for= "fname">First Name:</label>
@@ -72,7 +117,7 @@ tbody tr:nth-child(even){background-color: #A020F0}
         </textarea></label><br>
         <br>
         <input type="submit" value="send form">
-    </form>
+    </form> IDK why form is gone-->
 
     </body>
 
