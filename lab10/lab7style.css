@@ -29,3 +29,9 @@ text-decoration-style: double;}
 .otherskill {flex-basis: 25%; margin-right: 40px;}
 .ecredit {display: flex; flex: 1;}
 .text {flex-basis: 75%}
+.roller div {max-width: 100%;}
+.lowerhalf div {flex-wrap: wrap;}
+@media only screen and (max-width: 480px)
+{nav :link {display: block}}
+@media only screen and (max-width: 480px)
+{span {display: none}}
