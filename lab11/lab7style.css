@@ -1,0 +1,39 @@
+body {color: #d9cab3;
+    background-color: #212121;}
+p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#d9cab3;
+    font-size: 100%}
+    .quote {float: right; margin-top: 0px;}
+    .cc {float: left;}
+
+h1 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5px; font-size: 2em;}
+h2 {color: #6d9886; letter-spacing: normal; word-spacing: 1.5px; font-size: 1.25em;}
+p, h1, h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+p a {color:#6d9886}
+nav a:link {color:#6d9886;
+    background-color: #d9cab3;
+    padding:10px;
+    margin-bottom: 30px;}
+nav a:hover {background-color:#d9cab3;}
+a:link {color: #d9cab3}
+a:visited {color: #f6f6f6}
+a:hover{color: #1c0c5b;
+text-decoration-style: double;}
+.skillheader {text-align: center;}
+.icons {display: flex;}
+.icons img {width: 50px; height: 50px; margin-right: 20px;}
+.otherskill {padding: 20px; background-color: #18241f; border-radius: 1em;}
+.flexbox2 {display: flex;}
+.flexbox2 div {flex: 1}
+.icons {flex-basis: 75%; margin-top: 50px; margin-left: 35px;}
+.otherskill {flex-basis: 25%; margin-right: 40px;}
+.ecredit {display: flex; flex: 1;}
+.text {flex-basis: 75%}
+.roller div {max-width: 100%;}
+.lowerhalf div {flex-wrap: wrap;}
+@media only screen and (max-width: 480px)
+{nav :link {display: block}}
+@media only screen and (max-width: 480px)
+{span {display: none}}
+#skip {position: absolute; left: -999px; background-color: aquamarine;} 
+#skip:focus {left: 10px;}
