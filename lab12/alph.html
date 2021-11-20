@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 11</title>
+    <style>
+        body {background-color: aqua;}
+        .container {display: flex;}
+        #first {order:1;}
+        #second {order:2;}
+        #third {order:3;}
+    </style>
+    <script>
+        function WinnerMessage () 
+            { alert('You Win');}
+            function TryAgain () 
+            { alert('Try Again'); }
+            function ShuffleShells() {
+                document.getElementById("first").style.order = Math.floor((Math.random()*3)+2);
+            }
+            function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+audio.play();
+}
+    </script>
+  
+</head>
+<body onload="ShuffleShells();">
+    <h1>Choose One Alph, Carefully</h1>
+    <div class="container">
+    <img onclick="WinnerMessage ();" src="SSBU_spirit_Alph.png" id="first" alt="first alph">
+    <img onclick="TryAgain ();"src="SSBU_spirit_Alph.png" id="second" alt="second alph" onclick="playAudio('se_pikmin_special_N05.wav')">
+    <img onclick="TryAgain ();"src="SSBU_spirit_Alph.png" id="third" alt="third alph">
+    </div>
+    <div id="messages"></div>
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="se_pikmin_special_N05.wav"></audio>
+</body>
+</html>
