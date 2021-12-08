@@ -53,8 +53,8 @@ nav a:link {color:#000000;
         max-width: 800px; /* Max width */
         padding: 20px; line-height: 130%;
       }
-      /*@media only screen and (max-width: 600px)
-    {.tipsclickable {display: block};}*/
+      @media only screen and (max-width: 600px)
+    {.tipsclickable {display: flex};}
     @media only screen and (max-width: 600px)
     {.tipsclickable {justify-content: center;}}
     .ratingheading {color:#000000}
