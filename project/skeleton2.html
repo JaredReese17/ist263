@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Recipe Tips</title>
-    <style>
-
+    <link rel="stylesheet" href="projectstylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>    
    * {box-sizing: border-box;}
       
       body {
@@ -63,11 +64,11 @@
       }
       
       /* Individual bars */
-      .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
-      .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-      .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-      .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-      .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+      .bar-5 {width: 100%; height: 18px; background-color: #04AA6D;}
+      .bar-4 {width: 1%; height: 18px; background-color: #2196F3;}
+      .bar-3 {width: 1%; height: 18px; background-color: #00bcd4;}
+      .bar-2 {width: 1%; height: 18px; background-color: #ff9800;}
+      .bar-1 {width: 1%; height: 18px; background-color: #f44336;}
       
       /* Responsive layout - make the columns stack on top of each other instead of next to each other */
       @media (max-width: 400px) {
@@ -79,38 +80,76 @@
           display: none;
         }
       }</style>
+      <script>
+        /*function TipOff (){document.getElementById('2').style.display='none';
+        document.getElementById('3').style.display='none'
+        document.getElementById('4').style.display='none'
+        document.getElementById('5').style.display='none'
+        document.getElementById('6').style.display='none'
+        document.getElementById('1').style.display='none'}*/
+        function TipTextOff (){document.getElementById('tip1text').style.display='none';
+       document.getElementById('tip2text').style.display='none';
+       document.getElementById('tip3text').style.display='none';
+       document.getElementById('tip4text').style.display='none';
+       document.getElementById('tip5text').style.display='none';
+       document.getElementById('tip6text').style.display='none';}
+       function Tip1On () {document.getElementById('1').style.display='block';
+                            document.getElementById('tip1text').style.display='block';}
+        function Tip2On () {document.getElementById('2').style.display='block';
+                            document.getElementById('tip2text').style.display='block';}
+        function Tip3On () {document.getElementById('3').style.display='block';
+                            document.getElementById('tip3text').style.display='block';}
+        function Tip4On () {document.getElementById('4').style.display='block';
+                            document.getElementById('tip4text').style.display='block';}
+        function Tip5On () {document.getElementById('5').style.display='block';
+                            document.getElementById('tip5text').style.display='block';}
+        function Tip6On () {document.getElementById('6').style.display='block';
+                            document.getElementById('tip6text').style.display='block';}
+        function openModal() {document.getElementById('modal').style.display='block';}
+        function closeModal() {document.getElementById('modal').style.display='none';}
+      </script>
 </head>
 <body>
     <nav>
         <a href="skeleton.html">Home</a>
-        |
+        <span>|</span>
         <a href="skeleton2.html">Tips</a>
-        |
+        <span>|</span>
         <a href="skeleton3.html">Recipes</a>
     </nav>
     <hr>
-    <p>I would like to start off by offering a few tips and tricks that I have taken with me through my cooking journey. I have so much to learn still, and I am still only cooking by myself in my college apartment, yet I do believe I have valuable tips!</p>
-    <div><img src="tips.jpeg" alt="Tips"></div>
-    <ol>
-        <li>In a pinch, I believe that pre-cooked meals from Trader Joes are a life saver. They carry their own brand of multiple items, however, I would not shop here for weekly grocery needs.</li>
-        <li>Looking at weekly circulars and becoming a preferred shopper/getting a membership to grocery stores in your area is a great way to save money. For example, I try not to buy too much red meat unless it is on sale, and then I will get a bunch to freeze for when I want to use it.</li>
-        <li>Sauces are perfectly fine bottled and in glasses. Unless I am planning an exquisite dinner for my roommates, my college budget does not call for much more than market-brand sauces and dressings. Also, vegetables go amazing on pasta.</li>
-        <li>Meal prep anything. If I have time to make pasta or rice as a part of my dinner, I will make a ton to save in Tupperware for my next meal. Between classes and work I do not always have time to boil water. A watched bot never boils.</li>
-        <li>Air Fryers, Blenders, and Microwave ovens open so much possibility for quick and easy meals.</li>
-        <li>Breakfast is incredibly important. I finally got off my practice of having a large cup of hot black coffee every morning. Ill get up a bit earlier than normal just to scramble some eggs; it feels amazing.</li>
-     </ol>
+    <h1>Tips & Tricks</h1>
+    <p>I would like to start off by offering a few tips and tricks that I have taken with me through my cooking journey. I still have so much to learn, and I am still only cooking by myself in my college apartment, yet I do believe I have valuable tips!</p>
+    <div><img class="tipmage" src="tips.jpeg" alt="Tips"></div>
+    <h2 class="clicknumber">Click a number below to view the tip!</h2>
+    <div class="tipsclickable">
+      <div class="t1"><img src="1.png" alt="Tip 1" id="1" onclick="TipTextOff();Tip1On()"></div>
+      <div class="t2"><img src="2.png" alt="Tip 2" id="2" onclick="TipTextOff();Tip2On()"></div>
+      <div class="t3"><img src="3.png" alt="Tip 3" id="3" onclick="TipTextOff();Tip3On()"></div>
+      <div class="t4"><img src="4.png" alt="Tip 4" id="4" onclick="TipTextOff();Tip4On()"></div>
+      <div class="t5"><img src="5.png" alt="Tip 5" id="5" onclick="TipTextOff();Tip5On()"></div>
+      <div class="t6"><img src="6.png" alt="Tip 6" id="6" onclick="TipTextOff();Tip6On()"></div>
+  </div>
+    <div class="tiptext">
+        <div id="tip1text"><p>In a pinch, I believe that pre-cooked meals from Trader Joes are a life saver. They carry their own brand of multiple items, however, I would not shop here for weekly grocery needs.</p></div>
+        <div id="tip2text"><p>Looking at weekly circulars and becoming a preferred shopper/getting a membership to grocery stores in your area is a great way to save money. For example, I try not to buy too much red meat unless it is on sale, and then I will get a bunch to freeze for when I want to use it.</p></div>
+        <div id="tip3text"><p>Sauces are perfectly fine bottled and in glasses. Unless I am planning an exquisite dinner for my roommates, my college budget does not call for much more than market-brand sauces and dressings. Also, vegetables go amazing with pasta.</p></div>
+        <div id="tip4text"><p>Meal prep anything. If I have time to make pasta or rice as a part of my dinner, I will make a ton to save in Tupperware for my next meal. Between classes and work I do not always have time to boil water. A watched bot never boils.</p></div>
+        <div id="tip5text"><p>Air Fryers, Blenders, and Microwave ovens open so much possibility for quick and easy meals.</p></div>
+        <div id="tip6text"><p>Breakfast is incredibly important. I finally got off my practice of having a large cup of hot black coffee every morning. Ill get up a bit earlier than normal just to scramble some eggs; it feels amazing.</p></div>
+      </div>
      <hr>
      <h1>My Favorite Recipe</h1>
      <p>I want to share one of my favorite recipes of all time to make on a college budget. Steak and asparagus over rice. My boyfriend and I make this meal every time we get to see each other, and I have brought it to my life at school. This recipe is super quick and easy.</p>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<span class="heading">User Rating</span>
+<span class="ratingheading"><strong>User Rating</strong></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<p>4.1 average based on 254 reviews.</p>
+<span class="fa fa-star checked"></span>
+<p>5 Star average based on 1 review(s).</p>
 <hr style="border:3px solid #f1f1f1">
 
 <div class="row">
@@ -123,7 +162,7 @@
     </div>
   </div>
   <div class="side right">
-    <div>150</div>
+    <div><strong>1</strong></div>
   </div>
   <div class="side">
     <div>4 star</div>
@@ -134,7 +173,7 @@
     </div>
   </div>
   <div class="side right">
-    <div>63</div>
+    <div>0</div>
   </div>
   <div class="side">
     <div>3 star</div>
@@ -145,7 +184,7 @@
     </div>
   </div>
   <div class="side right">
-    <div>15</div>
+    <div>0</div>
   </div>
   <div class="side">
     <div>2 star</div>
@@ -156,7 +195,7 @@
     </div>
   </div>
   <div class="side right">
-    <div>6</div>
+    <div>0</div>
   </div>
   <div class="side">
     <div>1 star</div>
@@ -167,19 +206,18 @@
     </div>
   </div>
   <div class="side right">
-    <div>20</div>
+    <div>0</div>
   </div>
 </div>
-
+<p class="warning"><u>*please allow for up to 24 hours before your rating is recorded</u></p>
      <div>
          <div>
+             <br>
              <div>
-                 Rating:
+                <img class="steakyum" src="steakyummy.jpg" alt="Steak">
              </div>
-             <div>
-                <img src="steakyum.jpeg" alt="Steak">
-             </div>
-             <div>
+             <br>
+             <div class="servingsize">
                     <strong>Serving Size:</strong>1 hungry college student <br>
                         Ingredients: <br>
                         <form>
@@ -196,44 +234,71 @@
              </div>
          </div>
          <div>
+           <h2>Instructions:</h2></div>
+           <div>
              <ol>
                  <li>Preheat the oven to 450 degrees</li>
                  <li>Bring one cup of water to a boil, when boiling pour 1 cup of rice in, cool the burner down to a simmer and let sit until the rice has absorbed all of the water</li>
                  <li>Cover your asparagus in olive oil, then generously coat them in salt and pepper, followed by a sprinkling of parmesan cheese, onion powder, and garlic powder</li>
-                 <li>When at 450, put the asparagus on an oven safe tray and into the oven for 12 minutes or until a golden-brown crust has begun to form</li>
+                 <li>When at 450, put the asparagus on an oven safe tray and into the oven for 12 minutes (or until a golden-brown crust has begun to form)</li>
                  <li>Heat a pan on oven-setting 5/6 (medium heat) until hot. Put 1 tablespoon of butter onto the pan until melted.</li>
-                 <li>Once melted, place the sirloin onto the pan, sprinkle with salt and pepper, and let sit for 6/7 minutes depending on how red you enjoy the, middle, then flip and do the same for the other side.</li>
+                 <li>Once melted, place the sirloin onto the pan, sprinkle with salt and pepper, and let sit for 6/7 minutes depending on how red you enjoy the middle, then flip and do the same for the other side.</li>
                  <li>If you are using the steak tips, sprinkle with salt and pepper and keep the tips active on the pan as they turn brown. After about 6/7 minutes the tips should be cooked thoroughly.</li>
                  <li>Once done, add another tablespoon of butter to the pan and begin to spoon the butter of the steak for a minute or two, allowing the steak to absorb some of the butter.</li>
                  <li>Once the rice has absorbed all of the water, add butter and salt to taste and put into a bowl.</li>
-                 <li>Once the asparagus are ready, sprinkle with either fresh lemon juice or store brought and lay them over the rice.</li>
-                 <li>Then, lay the finished beef sirloin over the rice and asparagus, add salt and pepper to taste.</li>
+                 <li>Once the asparagus is ready, sprinkle with either fresh lemon juice or store brought and lay them over the rice.</li>
+                 <li>Finally, lay the finished beef sirloin over the rice and asparagus, add salt and pepper to taste.</li>
              </ol>
+            </div>
          </div>
      </div>
+     <h2>Main ingredients used in this recipe:</h2>
 <div>
-    <div>
-        <div><div><img src="steak.jpeg" alt="Steakimg"></div><div><a href="https://shop.wegmans.com/product/31800">Steak</a></div></div>
-        <div><div><img src="asparagus.jpeg" alt="Asparagus"></div><div><a href="https://shop.wegmans.com/recipes/1088/roasted-asparagus-with-parmigiano-reggiano">Asparagus</a></div></div>
-        <div><div><img src="rice.jpeg" alt="Rice"></div><div><a href="https://shop.wegmans.com/product/10138/wegmans-enriched-long-grain-white-rice">White Rice</a></div></div>
+    <div class="shopitem">
+        <div class="steakimg"><a href="https://shop.wegmans.com/product/31800">Steak</a></div>
+        <span>⠀⠀</span>
+        <div class="ragus"><a href="https://shop.wegmans.com/recipes/1088/roasted-asparagus-with-parmigiano-reggiano">Asparagus</a></div>
+        <span>⠀⠀</span>
+        <div class="rice"><a href="https://shop.wegmans.com/product/10138/wegmans-enriched-long-grain-white-rice">White Rice</a></div>
     </div>
-    <div>
+    <br>
+    <hr>
+    <div class="steakqualm">
+    <div class="buttonrate"><p onclick="openModal();"> Click to:<br>Leave a Review!</p></div>
+    <div class="qualm">
         <form action="mailto:jrreese@syr.edu">
             <textarea id="comments" name="comments" rows="4" cols="20">
 Comments, Feedback, & Qualms Welcome! </textarea>
         <input type="submit" value="send">
      </form>
     </div>
+  </div>
 </div>
     <hr>
-    <h2>Paninis</h2>
-    <div>
-        <div>
+    <h1>Paninis</h1>
+    
+        <div class="vidtext">
             Watch my friend Maria and I embark on the journey of panini making!
         </div>
-        <div>
+        <br>
+        <div class="vid">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/StZply5EvbE" title="YouTube video player" allowfullscreen></iframe>
         </div>
+ 
+    <div id="modal">
+      <form id="moda" action="mailto:jrreese@syr.edu">
+          <h2>Leave a Review!</h2> 
+          
+          <select name="Stars" id="stars">
+          <option value="1">1</option>
+         <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+          <input type="submit" value="Submit">
+          <p id="close" onclick="closeModal()">x</p>
+      </form>
     </div>
     <hr>
     <footer> 2021 : <a href="https://www.instagram.com/jared_reese/">Instagram</a> </footer>

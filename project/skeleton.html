@@ -9,46 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Nosifer&display=swap" rel="stylesheet">
-    <style>
-        nav a:link {color:#000000;
-        background-color: rgb(101, 224, 222);
-        padding:10px;
-        margin-bottom: 30px;}
-        nav a:hover {background-color:#faf2e5;}
-        a:link {color: #000000}
-        a:visited {color: #000000}
-        a:hover{color: #1c0c5b;
-        text-decoration-style: double;}
-        @media only screen and (max-width: 480px)
-        {nav :link {display: block}}
-        @media only screen and (max-width: 480px)
-        {span {display: none}}
-        #skip {position: absolute; left: -999px; background-color: aquamarine;} 
-        #skip:focus {left: 10px;}
-        .header {max-width: 100%;}
-        body {background-color: #DBF9FC;}
-        .form {text-align: center; flex: 1; padding: 10px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-        h1 {color:darkblue; font-size:300%; text-align: center; font-family: 'Marck Script', cursive; word-spacing: -10px;}
-        .jared {display: flex; flex: 1;margin-right: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-        .cheftext {font-size: 140%; float: right; text-align: justify;}
-        .chef {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
-        .buttons {display: flex; color: #DBF9FC}
-        .steak {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1}
-        .egg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1}
-        .gluten {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1}
-        .coldcut {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1}
-        .nini {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1}
-        .lower {display:flex}
-        .space {background-color: #DBF9FC ; flex: 1}
-        .lowerchef {display:flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
-        .fam {margin-left: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-        .lowcheftext {font-size: 110%;text-align: justify}
-        .agh {font-size: max(20px);}
-        footer {text-align: center;}
-        .topbar {display:flex}
-        nav {flex:1}
-        .search {flex:1; justify-content: right; margin-left: 400px;}
-    </style>
+    <link rel="stylesheet" href="projectstylesheet.css">
     <script async src="https://cse.google.com/cse.js?cx=a3f52715d95cbd9f1"></script>
     
 </head>
@@ -69,7 +30,7 @@
     <div class="gcse-search"></div>
 </div></div>
     <hr>
-    <div class="header"><img src="cuse.jpeg" alt="Head"></div>
+    <div class="header"><img src="cuse.jpg" alt="Head"></div>
 <a id="content"></a> 
 <h1><u>Get to Know the Chef</u></h1>
 <div class="chef">
@@ -87,19 +48,22 @@
     </div>
 </div>
 <hr>
+<br>
+<div class="button">
     <nav class ="buttons">
         <a class="steak" href="Skeleton2.html">Steak & Rice</a>
-        ⠀⠀
+        <span>⠀⠀</span>
         <a class="nini" href="skeleton2.html">Paninis</a>
-        ⠀⠀
+        <span>⠀⠀</span>
         <a class="coldcut" href="Skeleton3.html">Coldcut Lunch Sandwich</a>
-        ⠀⠀
+        <span>⠀⠀</span>
         <a class="egg" href="Skeleton3.html">Ramen & Egg</a>
-        ⠀⠀
+        <span>⠀⠀</span>
         <a class="gluten" href="Skeleton3.html">Gluten-Free Sesame Rice Ramen</a>
     </nav>
+</div>
 <hr>
-<div class= "lowerchef">
+<!--<div class= "lowerchef">
     <div class="lowcheftext">
         <p class="agh">I found my love of
 
@@ -125,7 +89,37 @@ adaptable for everyone’s taste.</p>
     </div>
 <br>
     <div class="fam"><img src="FAMILY.png" alt="Fam"></div>
+</div>-->
+<div class="familyinfo">
+    <div class="textfam">
+        <p class="agh">I found my love of
+
+            cooking at the unfortunate expense of one of my brother’s health. My brother, Aidan, was diagnosed
+            
+            with celiac disease last year. This turned the culture of my Italian household upside down. No more
+            
+            giant pasta meals. “Sunday sauce” became analytical to
+            
+            make sure there was no traces of gluten inside. Since his diagnosis, he started to cook every day,
+            
+            and teaching me some of his favorite meals to make as well. From there, my love of cooking took off.
+            
+            This year at school, I finally have my own kitchen. After three years of either dorm dining halls of
+            
+            fraternity house chefs, I am finally able to cook whatever I want, whenever I want (within reason, of
+            
+            course). I wanted to create this page to share some of my favorite meals with other students who
+            
+            are finally able to cook on their own. The recipes I have found to love are easy and incredibly
+            
+            adaptable for everyone’s taste.</p>
+    </div>
+    <div class="fampic">
+        <br>
+        <img src="FAMILY.png" alt="Fam">   
+    </div>
 </div>
+<hr>
 <br>
 <div class = "lower">
     <div class="space"> </div>
@@ -153,6 +147,7 @@ Comments, Feedback, & Qualms Welcome! </textarea>
 </form>
 <div class="space"> </div>
 </div>
+<br>
 <hr>
 <footer> 2021 : <a href="https://www.instagram.com/jared_reese/">Instagram</a> </footer>
 </body>
