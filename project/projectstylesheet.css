@@ -29,11 +29,21 @@ nav a:link {color:#000000;
     .cheftext {font-size: 140%; float: right; text-align: justify;}
     .chef {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
     .buttons {display: flex; color: #DBF9FC}
-    .steak, .b7, .b8, .b9, .b10, .b11 {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .egg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .gluten {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .coldcut {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .nini {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
+    .steak, .b7, .b8, .b9, .b10, .b11 {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center; cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥩</text></svg>")
+      16 0,
+    auto;}
+    .egg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍳</text></svg>")
+      16 0,
+    auto;}
+    .gluten {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍲</text></svg>")
+      16 0,
+    auto;}
+    .coldcut {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥪</text></svg>")
+      16 0,
+    auto;}
+    .nini {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🫔</text></svg>")
+      16 0,
+    auto;}
     .lower {display:flex}
     .space {background-color: #DBF9FC ; flex: 1}
     /*.lowerchef {display:flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em; justify-content: space-around;}
