@@ -1,18 +1,33 @@
 nav a:link {color:#000000;
     background-color: rgb(101, 224, 222);
     padding:10px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px; margin-right: 5px; margin-left: 5px;}
     nav a:hover {background-color:#faf2e5;}
     a:link {color: #000000}
     a:visited {color: #000000}
     a:hover{color: #1c0c5b;
-    text-decoration-style: double;}
-    @media only screen and (max-width: 600px)
-    {nav :link {display: block}}
+    text-decoration-style: double;}  
     @media only screen and (max-width: 600px)
     {span {display: none}}
+    @media only screen and (min-width: 600px)
+    {.hamicon {display: none}}
     @media only screen and (max-width: 600px)
-    {.button nav {display: block}}
+    {nav {display: none}}
+    @media only screen and (min-width: 600px)
+    {.navlank {display: block}}
+    @media only screen and (max-width: 600px)
+    {.steak, .nini, .gluten, .coldcut, .egg {display: none}}
+    @media only screen and (max-width: 600px)
+    {.buttons span {display: none}}
+    @media only screen and (max-width: 600px)
+    {.phonelink {display: block}}
+    @media only screen and (min-width: 600px)
+    {.phonelink {display: none}}
+    @media only screen and (max-width: 600px)
+    {body {font-size: 125%;}}
+    @media only screen and (max-width: 600px)
+    {.chef, .buttons, .phonelink, .familyinfo, .lower, .search {flex-wrap: wrap}}
+
     #skip {position: absolute; left: -999px; background-color: aquamarine;} 
     #skip:focus {left: 10px;}
     .header {max-width: 100%;}
@@ -20,29 +35,28 @@ nav a:link {color:#000000;
     .form {text-align: center; flex: 1; padding: 10px; background-color: rgb(58, 161, 160); border-radius: 1em;}
     h1 {color:darkblue; font-size:300%; text-align: center; font-family: 'Marck Script', cursive; word-spacing: -10px;}
     .jared {display: flex; flex: 1;margin-right: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-    .cheftext {font-size: 140%; float: right; text-align: justify;}
+    .cheftext {font-size: 140%; float: right; }
     .chef {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
     .buttons {display: flex; color: #DBF9FC}
-    .steak {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .egg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .gluten {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .coldcut {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
-    .nini {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
+    .nini, .steak, .coldcut, .gluten, .egg {margin-right: 15px; margin-left: 15px;}
+    .steak, .b7, .b8, .b9, .b10, .b11 {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center; cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥩</text></svg>") 16 0,auto; /*!emojicursor.app*/}
+    .egg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍳</text></svg>") 16 0,auto; /*!emojicursor.app*/}
+    .gluten {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍲</text></svg>") 16 0,auto; /*!emojicursor.app*/}
+    .coldcut {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥪</text></svg>") 16 0,auto; /*!emojicursor.app*/}
+    .nini {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🫔</text></svg>") 16 0,auto; /*!emojicursor.app*/}
     .lower {display:flex}
     .space {background-color: #DBF9FC ; flex: 1}
     /*.lowerchef {display:flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em; justify-content: space-around;}
     .fam {margin-left: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; flex:1; width: 100%}
     .lowcheftext {font-size: 140%; float: left; text-align: justify;}
     .agh {font-size: max(20px);}*/
-    footer {text-align: center;}
-    .topbar {display:flex}
-    nav {flex:1}
-    .search {flex:1; justify-content: right; margin-left: 200px;}
+    footer {text-align: center;} 
     .tipsclickable {display: flex; justify-content: space-around;}
     #tip2text, #tip3text, #tip4text, #tip5text, #tip6text {display: none;}
     .tipmage {width:50%; justify-content: center; padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;}
     .clicknumber {text-align: center;}
     .shopitem {display: flex; justify-content: space-around;}
+    .shopitem div {margin-right: 15px; margin-left: 15px;}
     .ragus {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
     .steakimg {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
     .rice {padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;flex: 1; text-align: center;}
@@ -54,7 +68,7 @@ nav a:link {color:#000000;
         padding: 20px; line-height: 130%;
       }
       @media only screen and (max-width: 600px)
-    {.tipsclickable {display: block};}
+    {.tipsclickable {display: flex};}
     @media only screen and (max-width: 600px)
     {.tipsclickable {justify-content: center;}}
     .ratingheading {color:#000000}
@@ -96,11 +110,12 @@ nav a:link {color:#000000;
             text-decoration: none;
             cursor: pointer;
           }
-          .warning {font-size: 10px; color: red;}
+          .warning {font-size: 12px; color: rgb(109, 1, 1);}
           
           .familyinfo {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
-          .fampic {width: auto; height: auto; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-          .textfam {margin-right: 15px; text-align: justify;}
+          .fampic {padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; float: right;height: auto;}
+          .textfam {margin-right: 15px; float: left;}
+
         .sandy, .Saporo, .riceram, .steakyum {
             display: block;
             margin-left: auto;
@@ -121,3 +136,19 @@ nav a:link {color:#000000;
             
             .vid {margin-left: 95px;}
             .modaltext {font-family: 'Courier New', Courier, monospace;}
+            .search {margin-right: 75px;}
+
+            @keyframes example {
+              0%   {background-color: rgb(255, 160, 160);}
+              25%  {background-color: rgb(101, 224, 222);}
+              50%  {background-color: #c4f6fa ;}
+              75% {background-color: rgb(160, 255, 160);}
+              100% {background-color: rgb(255, 160, 160);}
+            }
+            
+            /* The element to apply the animation to */
+            .buttonrate, .steak, .egg, .gluten, .coldcut, .nini, .b7, .b8, .b9, .b10, .b11 {
+              
+              animation-name: example;
+              animation-duration: 4s;
+              animation-iteration-count: infinite}
