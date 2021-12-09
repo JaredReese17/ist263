@@ -23,6 +23,10 @@ nav a:link {color:#000000;
     {.phonelink {display: block}}
     @media only screen and (min-width: 600px)
     {.phonelink {display: none}}
+    @media only screen and (max-width: 600px)
+    {body {font-size: 125%;}}
+    @media only screen and (max-width: 600px)
+    {.chef, .buttons, .phonelink, .familyinfo, .lower, .search {flex-wrap: wrap}}
 
     #skip {position: absolute; left: -999px; background-color: aquamarine;} 
     #skip:focus {left: 10px;}
@@ -109,7 +113,7 @@ nav a:link {color:#000000;
           .warning {font-size: 12px; color: rgb(109, 1, 1);}
           
           .familyinfo {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
-          .fampic {padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; float: right;height: auto; width: auto;}
+          .fampic {padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; float: right;height: auto;}
           .textfam {margin-right: 15px; float: left;}
 
         .sandy, .Saporo, .riceram, .steakyum {
