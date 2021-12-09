@@ -23,8 +23,7 @@ nav a:link {color:#000000;
     {.phonelink {display: block}}
     @media only screen and (min-width: 600px)
     {.phonelink {display: none}}
-    @media only screen and (max-width: 600px)
-    {body {font-size: 125%}}
+
     #skip {position: absolute; left: -999px; background-color: aquamarine;} 
     #skip:focus {left: 10px;}
     .header {max-width: 100%;}
@@ -32,7 +31,7 @@ nav a:link {color:#000000;
     .form {text-align: center; flex: 1; padding: 10px; background-color: rgb(58, 161, 160); border-radius: 1em;}
     h1 {color:darkblue; font-size:300%; text-align: center; font-family: 'Marck Script', cursive; word-spacing: -10px;}
     .jared {display: flex; flex: 1;margin-right: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-    .cheftext {font-size: 140%; float: right; text-align: justify;}
+    .cheftext {font-size: 140%; float: right; }
     .chef {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
     .buttons {display: flex; color: #DBF9FC}
     .nini, .steak, .coldcut, .gluten, .egg {margin-right: 15px; margin-left: 15px;}
@@ -110,8 +109,9 @@ nav a:link {color:#000000;
           .warning {font-size: 12px; color: rgb(109, 1, 1);}
           
           .familyinfo {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
-          .fampic {width: auto; height: auto; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-          .textfam {margin-right: 15px; text-align: justify;}
+          .fampic {padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; float: right;}
+          .textfam {margin-right: 15px; float: left;}
+
         .sandy, .Saporo, .riceram, .steakyum {
             display: block;
             margin-left: auto;
