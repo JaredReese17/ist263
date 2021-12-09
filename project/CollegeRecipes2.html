@@ -107,15 +107,24 @@
                             document.getElementById('tip6text').style.display='block';}
         function openModal() {document.getElementById('modal').style.display='block';}
         function closeModal() {document.getElementById('modal').style.display='none';}
+        function TurnNavOnOff () {
+                if (document.getElementById("navlank").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navlank").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlank").style.display = "block";
+                }
+            }
       </script>
 </head>
 <body>
   <a id="skip" href="#content">Skip to Content</a>
-  <nav>
+  <img class="hamicon" src="borgnav.png" width="55" onclick="TurnNavOnOff();" alt="hamicon" id="hamicon">
+  <nav id="navlank">
     <a href="CollegeRecipes.html">Home</a>
-    <span>|</span>
+    
     <a href="CollegeRecipes2.html">Tips</a>
-    <span>|</span>
+    
     <a href="CollegeRecipes3.html">Recipes</a>
 </nav>
     <hr>
@@ -141,6 +150,7 @@
         <div id="tip6text"><p>Breakfast is incredibly important. I finally got off my practice of having a large cup of hot black coffee every morning. Ill get up a bit earlier than normal just to scramble some eggs; it feels amazing.</p></div>
       </div>
      <hr>
+     <a id="content"></a> 
      <h1>My Favorite Recipe</h1>
      <p>I want to share one of my favorite recipes of all time to make on a college budget. Steak and asparagus over rice. My boyfriend and I make this meal every time we get to see each other, and I have brought it to my life at school. This recipe is super quick and easy.</p>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -257,9 +267,9 @@
 <div>
     <div class="shopitem">
         <div class="steakimg"><a href="https://shop.wegmans.com/product/31800">Steak</a></div>
-        <span>⠀⠀</span>
+        <!--<span>⠀⠀</span>-->
         <div class="ragus"><a href="https://shop.wegmans.com/recipes/1088/roasted-asparagus-with-parmigiano-reggiano">Asparagus</a></div>
-        <span>⠀⠀</span>
+       <!-- <span>⠀⠀</span>-->
         <div class="rice"><a href="https://shop.wegmans.com/product/10138/wegmans-enriched-long-grain-white-rice">White Rice</a></div>
     </div>
     <br>
@@ -268,6 +278,8 @@
     <div class="buttonrate"><p onclick="openModal();"> Click to:<br>Leave a Review!</p></div>
     <div class="qualm">
         <form action="mailto:jrreese@syr.edu">
+          <label for="comments">Feedback:</label>
+          <br>
             <textarea id="comments" name="comments" rows="4" cols="20">
 Comments, Feedback, & Qualms Welcome! </textarea>
         <input type="submit" value="send">

@@ -7,14 +7,25 @@
     <title>Three College Recipes</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="projectstylesheet.css">
+    <script>
+        function TurnNavOnOff () {
+                if (document.getElementById("navlank").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navlank").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlank").style.display = "block";
+                }
+            }
+    </script>
 </head>
 <body>
     <a id="skip" href="#content">Skip to Content</a>
-    <nav>
+    <img class="hamicon" src="borgnav.png" width="55" onclick="TurnNavOnOff();" alt="hamicon" id="hamicon">
+    <nav id="navlank">
         <a href="CollegeRecipes.html">Home</a>
-        <span>|</span>
+        
         <a href="CollegeRecipes2.html">Tips</a>
-        <span>|</span>
+        
         <a href="CollegeRecipes3.html">Recipes</a>
     </nav>
     <hr>
@@ -38,7 +49,7 @@
                     <input type="checkbox" id="vehicle8" name="vehicle4" value="Bus">
                     <label for="vehicle8"> 2 slices of thin slices white American cheese</label> <br>
                     <input type="checkbox" id="vehicle9" name="vehicle9" value="Plane">
-                    <label for="vehicle8"> Arugula, cholula hot sauce, pepper, everything bagel seasoning and mayonnaise to taste</label>
+                    <label for="vehicle9"> Arugula, cholula hot sauce, pepper, everything bagel seasoning and mayonnaise to taste</label>
                     <br>
                 </form>
     </div>
