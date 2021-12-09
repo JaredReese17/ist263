@@ -24,7 +24,7 @@ nav a:link {color:#000000;
     @media only screen and (min-width: 600px)
     {.phonelink {display: none}}
     @media only screen and (max-width: 600px)
-    {body {font-size: 125%;}}
+    {body {font-size: 150%;}}
     @media only screen and (max-width: 600px)
     {.chef, .buttons, .phonelink, .familyinfo, .lower, .search {flex-wrap: wrap}}
 
