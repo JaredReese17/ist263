@@ -24,16 +24,15 @@ nav a:link {color:#000000;
     @media only screen and (min-width: 600px)
     {.phonelink {display: none}}
     @media only screen and (max-width: 600px)
-    {body {font-size: 150%;}}
+    {p {font-size: 150%;line-height: 110%;}}
     @media only screen and (max-width: 600px)
     {.chef, .buttons, .phonelink, .familyinfo, .lower, .search {flex-wrap: wrap}}
-
     #skip {position: absolute; left: -999px; background-color: aquamarine;} 
     #skip:focus {left: 10px;}
     .header {max-width: 100%;}
     body {background-color: #DBF9FC;}
     .form {text-align: center; flex: 1; padding: 10px; background-color: rgb(58, 161, 160); border-radius: 1em;}
-    h1 {color:darkblue; font-size:300%; text-align: center; font-family: 'Marck Script', cursive; word-spacing: -10px;}
+    h1 {color:darkblue; font-size:300%; text-align: center; font-family: 'Marck Script', cursive; word-spacing: -10px;text-shadow: 0 1px 3px rgba(0,0,0,.8)}
     .jared {display: flex; flex: 1;margin-right: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em;}
     .cheftext {font-size: 140%; float: right; }
     .chef {display: flex; padding: 20px; background-color: rgb(58, 161, 252); border-radius: 1em;}
@@ -65,7 +64,7 @@ nav a:link {color:#000000;
         font-family: Arial;
         margin: 0 auto; /* Center website */
         max-width: 800px; /* Max width */
-        padding: 20px; line-height: 130%;
+        padding: 20px; 
       }
       @media only screen and (max-width: 600px)
     {.tipsclickable {display: flex};}
