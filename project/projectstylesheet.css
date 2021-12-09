@@ -47,10 +47,7 @@ nav a:link {color:#000000;
     .fam {margin-left: 15px; padding: 20px; background-color: rgb(58, 161, 160); border-radius: 1em; flex:1; width: 100%}
     .lowcheftext {font-size: 140%; float: left; text-align: justify;}
     .agh {font-size: max(20px);}*/
-    footer {text-align: center;}
-    .topbar {display:flex}
-    nav {flex:1}
-    .search {flex:1; justify-content: right; }
+    footer {text-align: center;} 
     .tipsclickable {display: flex; justify-content: space-around;}
     #tip2text, #tip3text, #tip4text, #tip5text, #tip6text {display: none;}
     .tipmage {width:50%; justify-content: center; padding: 10px; background-color: rgb(101, 224, 222); border-radius: 1em;}
