@@ -26,6 +26,12 @@ nav a:link {color:#000000;
     @media only screen and (max-width: 600px)
     {p {font-size: 150%;line-height: 110%;}}
     @media only screen and (max-width: 600px)
+    {ol {font-size: 150%;line-height: 110%;}}
+    @media only screen and (max-width: 600px)
+    {form {font-size: 150%;line-height: 110%;}}
+    @media only screen and (max-width: 600px)
+    {footer {font-size: 150%;line-height: 110%;}}
+    @media only screen and (max-width: 600px)
     {.chef, .buttons, .phonelink, .familyinfo, .lower, .search {flex-wrap: wrap}}
     #skip {position: absolute; left: -999px; background-color: aquamarine;} 
     #skip:focus {left: 10px;}
